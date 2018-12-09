@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="欢迎李小强"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入您的用户名"
+        android:layout_marginTop="80dp"
+        android:id="@+id/login_name"
+        android:padding="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入您的密码"
+        android:id="@+id/login_pwd"
+        android:password="true"
+        android:layout_below="@id/login_name"
+        android:padding="15dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_pwd"
+        android:padding="15dp"
+        android:id="@+id/r1">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:id="@+id/login"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:id="@+id/add_login"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="第三方登录"
+        android:layout_below="@id/r1"
+        android:id="@+id/heLogin"/>
+
+</RelativeLayout>

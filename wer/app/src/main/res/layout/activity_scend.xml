@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bwei.week01exe111230.ScendActivity">
+    <com.youth.banner.Banner
+        android:id="@+id/scend_banner"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+    </com.youth.banner.Banner>
+    <TextView
+        android:id="@+id/scend_title"
+        android:text="标题"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/scend_price"
+        android:text="价格"
+        android:textColor="#f00"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

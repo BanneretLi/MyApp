@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.example.a51044.myfirstapp.weight.MySerchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_serch_view"></com.example.a51044.myfirstapp.weight.MySerchView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/cannot_find_hdpi"
+        android:layout_centerInParent="true"
+        android:id="@+id/cannot_find_img"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cannot_find_img"
+        android:id="@+id/cannot_find_tv"
+        android:text="抱歉，没有找到商品额~~"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/home_serch_recy"
+        android:layout_below="@id/home_serch_view"
+        android:layout_above="@id/home_serch_tv2"></com.jcodecraeer.xrecyclerview.XRecyclerView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        android:layout_alignParentBottom="true"
+        android:text="抱歉，没有更多商品啦~"
+        android:visibility="gone"
+        android:gravity="center"
+        android:id="@+id/home_serch_tv2"/>
+</RelativeLayout>

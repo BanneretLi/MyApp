@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.example.a51044.myfirstapp.weight.MySerchView
+        android:id="@+id/mySerch"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"></com.example.a51044.myfirstapp.weight.MySerchView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="搜索历史" />
+
+        <TextView
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@mipmap/common_btn_delete_n_hdpi" />
+    </RelativeLayout>
+
+    <com.example.a51044.myfirstapp.weight.MyFlowLayout
+        android:id="@+id/myFlowLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:textColor="@color/colorPrimaryDark"></com.example.a51044.myfirstapp.weight.MyFlowLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="热门搜索" />
+
+    <com.example.a51044.myfirstapp.weight.MyFlowLayout
+        android:id="@+id/myFlowLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:textColor="@color/colorPrimaryDark"></com.example.a51044.myfirstapp.weight.MyFlowLayout>
+
+
+</LinearLayout>

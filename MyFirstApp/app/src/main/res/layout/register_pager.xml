@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@mipmap/login_img">
+    <com.xw.repo.XEditText
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/register_pager_name"
+        android:hint="手机号"
+        android:textColorHint="@color/loginPager"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="130dp"
+        android:drawableLeft="@mipmap/login_icon_phone_n_hdpi"
+        android:drawablePadding="20dp"
+        android:theme="@style/MyEdTextWidth"
+        android:maxLength="13"
+        app:x_pattern="3,4,4"
+        app:x_separator=" "/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/register_pager_name"
+        android:id="@+id/re1">
+        <com.xw.repo.XEditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="27dp"
+            android:text="获取验证码"
+            android:textColor="@color/loginPager"
+            android:layout_alignParentRight="true"
+            android:id="@+id/register_pager_get_verify"/>
+
+        <com.xw.repo.XEditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:hint="验证码"
+            android:textColorHint="@color/loginPager"
+            android:drawableLeft="@mipmap/login_icon_verification_code_n_hdpi"
+            android:drawablePadding="20dp"
+            android:theme="@style/MyEdTextWidth"
+            android:id="@+id/register_pager_verify"
+            />
+    </RelativeLayout>
+
+
+
+    <com.xw.repo.XEditText
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/register_pager_pwd"
+        android:hint="登录密码"
+        android:textColorHint="@color/loginPager"
+        android:drawableLeft="@mipmap/login_icon_lock_n_hdpi"
+        android:drawablePadding="20dp"
+        android:theme="@style/MyEdTextWidth"
+        android:inputType="textPassword"
+        app:x_showPwdDrawable="@mipmap/login_icon_eye_n_hdhpi"
+        android:layout_below="@id/re1"/>
+
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已有账户? 立即登录"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/loginPager"
+            android:id="@+id/register_pager_back"
+            android:layout_below="@+id/register_pager_pwd"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="5dp"/>
+
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:background="@drawable/login_pager"
+        android:layout_gravity="center"
+        android:text="注册"
+       android:layout_marginBottom="@dimen/dp_125"
+        android:textColor="#ff5f71"
+        android:id="@+id/register_pager_register"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/wait_pay_recy"
+        android:layout_above="@id/wait_pay_layout"></android.support.v7.widget.RecyclerView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/wait_pay_layout"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消订单"
+            android:layout_marginTop="@dimen/dp_23"
+            android:id="@+id/wait_pay_delete"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共3件商品，需付款1670.00元"
+            android:layout_alignParentRight="true"
+            android:id="@+id/wait_pay_count"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="去支付"
+            android:id="@+id/wait_pay_go"
+            android:layout_below="@id/wait_pay_count"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_10"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

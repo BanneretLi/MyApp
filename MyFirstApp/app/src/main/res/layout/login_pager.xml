@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@mipmap/login_img"
+    android:gravity="center">
+
+    <com.xw.repo.XEditText
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/login_pager_name"
+        android:hint="手机号"
+        android:textColorHint="@color/loginPager"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="160dp"
+        android:drawableLeft="@mipmap/login_icon_phone_n_hdpi"
+        android:drawablePadding="20dp"
+        android:theme="@style/MyEdTextWidth"
+        android:maxLength="11"
+        app:x_clearDrawable="@mipmap/login_icon_lock_n_hdpi"
+        app:x_pattern="3,4,4"
+        app:x_separator=" " />
+
+        <com.xw.repo.XEditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/login_pager_pwd"
+            android:hint="登录密码"
+            android:textColorHint="@color/loginPager"
+            android:drawablePadding="20dp"
+            android:inputType="textPassword"
+            app:x_showPwdDrawable="@mipmap/login_icon_eye_n_hdhpi"
+            android:drawableLeft="@mipmap/login_icon_lock_n_hdpi"
+            android:theme="@style/MyEdTextWidth"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="30dp"
+            android:maxLength="10"
+            android:layout_below="@+id/login_pager_name"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/login_pager_pwd"
+        android:id="@+id/r1">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="记住密码"
+            android:textColor="@color/loginPager"
+            android:theme="@style/MyCheckWidth"
+            android:id="@+id/login_pager_check"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快速注册"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/loginPager"
+            android:id="@+id/login_pager_register"/>
+    </RelativeLayout>
+
+        <Button
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:background="@drawable/login_pager"
+            android:text="登录"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ff5f71"
+            android:id="@+id/login_pager_login"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="120dp"/>
+
+
+
+
+</RelativeLayout>
